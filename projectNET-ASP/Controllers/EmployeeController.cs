@@ -52,5 +52,13 @@ namespace projectNET_ASP.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null) return BadRequest();
+            var em = await _context.Employee.FirstOrDefaultAsync(c => c.Id == id);
+            if (em == null) return NotFound();
+            return View(em);
+        }
     }
 }

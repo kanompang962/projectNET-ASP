@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\idavee\source\repos\projectNET-ASP\projectNET-ASP
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/idavee/source/repos/projectNET-ASP/projectNET-ASP/Views/CallStudent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbFN0dWRlbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/idavee/source/repos/projectNET-ASP/projectNET-ASP/Views/CallStudent/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbFN0dWRlbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

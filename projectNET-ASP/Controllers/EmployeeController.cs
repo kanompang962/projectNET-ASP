@@ -26,6 +26,17 @@ namespace projectNET_ASP.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || id <= 0) return BadRequest();
+            var em = await _context.Employee.FirstOrDefaultAsync(c => c.Id == id);
+            if (em == null) return NotFound();
+
+            _context.Employee.Remove(em);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Employee em)

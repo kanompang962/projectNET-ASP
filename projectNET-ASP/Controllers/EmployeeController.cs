@@ -60,5 +60,26 @@ namespace projectNET_ASP.Controllers
             if (em == null) return NotFound();
             return View(em);
         }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null) return BadRequest();
+            var em = await _context.Employee.FirstOrDefaultAsync(c => c.Id == id);
+            if (em == null) return NotFound();
+            return View(em);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Employee em)
+        {
+            var p = await _context.Employee.FirstOrDefaultAsync(c => c.Id == id);
+            p.Name = em.Name;
+            p.Address = em.Address;
+            p.Age = em.Age;
+            p.Salary = em.Salary;
+            _context.Update(p);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

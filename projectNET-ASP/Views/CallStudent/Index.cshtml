@@ -4,14 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Student API</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p class="header">
+    <a asp-action="Create" class="button1">+Create New</a>
+    <button class="button2" >Score</button>
 </p>
-<table class="table">
+<div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
     <thead>
-        <tr>
+        <tr class="tbl-header">
             <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
@@ -31,7 +33,7 @@
                 @Html.DisplayNameFor(model => model.Completed)
             </th>
             <th></th>
-        </tr>
+        </trc>
     </thead>
     <tbody>
 @foreach (var item in Model) {
@@ -63,3 +65,5 @@
 }
     </tbody>
 </table>
+</div>
+

@@ -7,9 +7,8 @@
 <body class="body2">
     <h1>Details</h1>
 <div>
-    <h4>Employee</h4>
     <hr />
-    <dl class="row">
+    <dl class="row txt-color-w">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
@@ -44,7 +43,7 @@
 </div>
 <div class="button1">
     @Html.ActionLink("Edit", "Edit", new {  id = Model.Id  }) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="txt-color-w">Back to List</a>
 </div>
 </body>
 

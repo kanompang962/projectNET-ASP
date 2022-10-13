@@ -24,6 +24,10 @@ body {
     font-weight: 100;
 }
 
+.rcorners {
+    border-radius: 25px;
+}
+
 .button1 {
     display: inline-block;
     padding: 5px 10px;

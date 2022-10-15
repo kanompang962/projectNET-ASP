@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 html {
     font-size: 14px;
 }
@@ -28,15 +29,69 @@ body {
     border-radius: 25px;
 }
 
-.btn-radius {
+.btn-radius-li1 {
     border-radius: 25px;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+}
+.btn-radius-li2 {
+    border-radius: 25px;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: 'Roboto', sans-serif;
 }
 
 .txt-color-w {
     color: #fff;
 }
+.txt-color-b {
+    color: #000000;
+}
+.txt-color-li1 {
+    color: #fff;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+}
+.txt-color-li2 {
+    color: #fff;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card2 {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
 
 .button1 {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     padding: 5px 10px;
     font-size: 14px;
@@ -52,6 +107,9 @@ body {
 }
 
 .button2 {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     padding: 5px 10px;
     font-size: 14px;
@@ -76,8 +134,16 @@ body {
     transform: translateY(4px);
 }
 
+
 h1 {
     font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+h4 {
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
@@ -123,7 +189,7 @@ td {
 
 /* demo styles */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
 
 body {
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);

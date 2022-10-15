@@ -5,10 +5,12 @@
 }
 
 <body class="body2">
-    <h1>Details</h1>
-<div>
-    <hr />
-    <dl class="row txt-color-w">
+    <h1 class="text-lg-start">Details</h1>
+    <h4 class="text-lg-start txt-color-li1">Employee</h4>
+<hr />
+<div class="card2">
+    <div class="container">
+        <dl class="row txt-color-w">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
@@ -40,8 +42,10 @@
             @Html.DisplayFor(model => model.Salary)
         </dd>
     </dl>
+    </div>
 </div>
-<div class="button1">
+<br />
+<div class="button2">
     @Html.ActionLink("Edit", "Edit", new {  id = Model.Id  }) |
     <a asp-action="Index" class="txt-color-w">Back to List</a>
 </div>

@@ -4,11 +4,13 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 class="text-lg-start">Details</h1>
+<h4 class="text-lg-start txt-color-li2">Student</h4>
+<hr />
+<div class="card">
 
-<div>
-    <hr />
-    <dl class="row txt-color-w">
+    <div class="container">
+        <dl class="row txt-color-w">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
@@ -46,7 +48,9 @@
             @Html.DisplayFor(model => model.Completed)
         </dd>
     </dl>
+    </div>
 </div>
+<br />
 <div class="button1">
     @Html.ActionLink("Edit", "Edit", new {  id = Model.Id  }) |
     <a asp-action="Index" class="txt-color-w">Back to List</a>
